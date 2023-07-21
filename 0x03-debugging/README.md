@@ -1,0 +1,1 @@
+satan is a devil
