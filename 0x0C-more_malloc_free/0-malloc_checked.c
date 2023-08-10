@@ -1,26 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
-**malloc_checked - allocate memory using malloc
-*
-*@b: unsigned int
-*
-*Return: the pointer
-**/
-
+* malloc_checked - if have error throw 98 error
+* @b: bytes
+* Return: pointer void
+*/
 void *malloc_checked(unsigned int b)
 {
-	int *n;
+	void *point;
 
-	n = malloc(b);
-
-	if (!n)
-	{
-		free(n);
+	point = malloc(b);
+	if (!point)
 		exit(98);
-	}
-
-	return (n);
-
+	return (point);
 }
