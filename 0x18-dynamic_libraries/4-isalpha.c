@@ -1,13 +1,12 @@
 #include "main.h"
 /**
-* _islower - Return 1 if letter is lowercase, 0 if not.
-* @c: char type lette
-* Return: 1 if lowercase, 0 if not lowercase
-*/
-int _islower(int c)
+ * _isalpha - verify is alphabetic characters.
+ * @c: character
+ * Return: 1 or 0
+ */
+int _isalpha(int c)
 {
-	if (c > 96 && c < 123)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
